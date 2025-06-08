@@ -21,4 +21,11 @@ class AppleWareHouseTest {
 
     }
 
+    @Test
+    void findApples(){
+        AppleWareHouse wareHouse = new AppleWareHouse();
+        List<Apple> apples = wareHouse.findApples("yellow");
+        assertEquals(apples.size(), 2);
+    }
+
 }

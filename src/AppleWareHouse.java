@@ -36,4 +36,14 @@ public class AppleWareHouse {
         }
         return greenApples;
     }
+
+    public List<Apple> findApples(String color) {
+        List<Apple> apples = new ArrayList<>();
+        for (Apple a : this.apples) {
+            if (color.equals(a.getColor())) {
+                apples.add(a);
+            }
+        }
+        return apples;
+    }
 }
