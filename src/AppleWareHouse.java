@@ -26,4 +26,14 @@ public class AppleWareHouse {
         }
         return greenApples;
     }
+
+    public List<Apple> findRedApples() {
+        List<Apple> greenApples = new ArrayList<>();
+        for (Apple a : apples) {
+            if (a.getColor().equals("red")) {
+                greenApples.add(a);
+            }
+        }
+        return greenApples;
+    }
 }
