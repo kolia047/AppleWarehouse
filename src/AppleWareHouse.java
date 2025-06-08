@@ -46,4 +46,14 @@ public class AppleWareHouse {
         }
         return apples;
     }
+
+    public List<Apple> findHeavyApples(int weight) {
+        List<Apple> heavyApples = new ArrayList<>();
+        for (Apple a : apples) {
+            if (a.getWeight() > weight) {
+                heavyApples.add(a);
+            }
+        }
+        return heavyApples;
+    }
 }

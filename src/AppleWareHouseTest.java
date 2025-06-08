@@ -28,4 +28,11 @@ class AppleWareHouseTest {
         assertEquals(apples.size(), 2);
     }
 
+    @Test
+    void findHeavyApplesTest(){
+        AppleWareHouse wareHouse = new AppleWareHouse();
+        List<Apple> heavyApples = wareHouse.findHeavyApples(150);
+        assertEquals(heavyApples.size(), 4);
+    }
+
 }
